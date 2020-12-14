@@ -3,9 +3,10 @@ package com.llm.springcloud.controller;
 import com.llm.springcloud.entities.PaymentEntity;
 import com.llm.springcloud.utils.CommonResult;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
 
 /**
  * @description: 消费者controller层，调用者
@@ -16,9 +17,10 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class OrderController {
 
-    private static final String PAYMENT_URL = "http://localhost:8001";
+//    private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
-    @Autowired
+    @Resource
     RestTemplate restTemplate;
 
     @PostMapping("consumer/payment/create")
