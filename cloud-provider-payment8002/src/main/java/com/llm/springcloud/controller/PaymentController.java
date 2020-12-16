@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @description: 生产者支付controller层
  * @author: LiuLuMing
@@ -47,4 +49,26 @@ public class PaymentController {
 
     }
 
+    @GetMapping("lb")
+    public String getServerPort(){
+        return serverPort;
+    }
+
+    /**
+     * 功能说明: 模拟超时情况，openfeign默认是等待一秒，超过后就报错
+     *
+     * @param
+     * @return 端口号
+     * @author  LiuLuMing
+     * @createtime  2020/12/16 10:25
+     */
+    @GetMapping("feign/timeout")
+    public String paymentFeignTimeout(){
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return serverPort;
+    }
 }
