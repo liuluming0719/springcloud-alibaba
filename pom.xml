@@ -10,22 +10,25 @@
     <packaging>pom</packaging>
 
 
-    <modules>
-      <module>cloud-provider-payment8001</module>
-      <module>cloud-api-commons</module>
-      <module>cloud-consumer-order80</module>
-      <module>cloud-eureka-server7001</module>
-      <module>cloud-eureka-server7002</module>
-      <module>cloud-provider-payment8002</module>
-      <module>cloud-consumer-feign-order80</module>
-      <module>cloud-provider-hystrix-payment8001</module>
-      <module>cloud-consumer-feign-hystrix-order80</module>
-      <module>cloud-consumer-hystrix-dashboard9001</module>
-      <module>cloud-gateway-gateway9527</module>
-        <module>cloud-config-center-3344</module>
-      <module>cloud-config-client-3355</module>
-        <module>cloud-config-client-3366</module>
-    </modules>
+  <modules>
+    <module>cloud-provider-payment8001</module>
+    <module>cloud-api-commons</module>
+    <module>cloud-consumer-order80</module>
+    <module>cloud-eureka-server7001</module>
+    <module>cloud-eureka-server7002</module>
+    <module>cloud-provider-payment8002</module>
+    <module>cloud-consumer-feign-order80</module>
+    <module>cloud-provider-hystrix-payment8001</module>
+    <module>cloud-consumer-feign-hystrix-order80</module>
+    <module>cloud-consumer-hystrix-dashboard9001</module>
+    <module>cloud-gateway-gateway9527</module>
+    <module>cloud-config-center-3344</module>
+    <module>cloud-config-client-3355</module>
+    <module>cloud-config-client-3366</module>
+    <module>cloudalibaba-provider-payment9001</module>
+    <module>cloudalibaba-provider-payment9002</module>
+    <module>cloudalibaba-consumer-nacos-order83</module>
+  </modules>
 
 
 
@@ -61,7 +64,7 @@
           <type>pom</type>
           <scope>import</scope>
         </dependency>
-        <!--spring cloud alibaba 2.1.0.RELEASE-->
+        <!--spring cloud alibaba 2.1.0.RELEASE 正式引入阿里巴巴-->
         <dependency>
           <groupId>com.alibaba.cloud</groupId>
           <artifactId>spring-cloud-alibaba-dependencies</artifactId>
