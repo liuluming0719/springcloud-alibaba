@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @description: Nacos作为配置controller
  * @author: LiuLuMing
- * @createtime: 2021-06-01 16:44
+ * @createtime: 2021-06-03 21:53
  */
 @RestController
 @RefreshScope
