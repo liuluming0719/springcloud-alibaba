@@ -28,8 +28,11 @@
     <module>cloudalibaba-provider-payment9001</module>
     <module>cloudalibaba-provider-payment9002</module>
     <module>cloudalibaba-consumer-nacos-order83</module>
-      <module>cloud-providerconsul-payment8006</module>
+    <module>cloudalibaba-config-nacos-client3377</module>
+    <module>cloud-providerconsul-payment8006</module>
     <module>cloud-consumerconsul-order80</module>
+    <module>cloud-provider-zk-payment8004</module>
+    <module>cloud-consumer-zk-order80</module>
   </modules>
 
 
