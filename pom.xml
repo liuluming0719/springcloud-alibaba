@@ -28,6 +28,8 @@
     <module>cloudalibaba-provider-payment9001</module>
     <module>cloudalibaba-provider-payment9002</module>
     <module>cloudalibaba-consumer-nacos-order83</module>
+      <module>cloud-providerconsul-payment8006</module>
+    <module>cloud-consumerconsul-order80</module>
   </modules>
 
 
